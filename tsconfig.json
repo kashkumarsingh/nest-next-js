@@ -1,0 +1,62 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".", // Set baseUrl to the root of the project
+    "paths": {
+      "@redux/*": [
+        "redux/*"
+      ],
+      "@components/*": [
+        "components/*"
+      ],
+      "@services/*": [
+        "services/*"
+      ],
+      "@types/*": [
+        "types/*"
+      ],
+      "@lib/*": [
+        "lib/*"
+      ]
+    },
+    "lib": [
+      "dom",
+      "esnext"
+    ], // Use 'esnext' for latest features
+    "allowJs": true,
+    "jsx": "preserve", // Use the new JSX Transform with React 17+
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true, // Skip type checking of declaration files for better performance
+    "resolveJsonModule": true, // Allow importing JSON files as modules
+    "isolatedModules": true, // Ensures that files can be safely compiled independently
+    "incremental": true, // Enable incremental compilation for faster builds
+    "declaration": true, // Generate declaration files for better type support
+    "outDir": "./dist", // Direct the output to a specific directory
+    "forceConsistentCasingInFileNames": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "module": "ESNext",
+    "target": "ES6",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "next-env.d.ts",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ] // Exclude dist folder from being compiled
+}
